@@ -1,0 +1,81 @@
+<!--
+ * @Description: 
+ * @Author: jinxiaojian
+ * @Email: jinxiaojian@youxin.com
+ * @Date: 2019-11-22 18:14:49
+ * @LastEditTime: 2019-12-12 13:40:09
+ * @LastEditors: 靳肖健
+ -->
+<!DOCTYPE html>
+<!-- saved from url=(0018)http://jxjweb.top/ -->
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+  <title>熠熠生阳</title>
+  <meta name="generator" content="Jekyll v3.8.5">
+  <meta property="og:title" content="jxj-web">
+  <meta property="og:locale" content="en_US">
+  <meta name="description" content="前端,加油!">
+  <meta property="og:description" content="前端,加油!">
+  <link rel="canonical" href="http://jxjweb.top/">
+  <meta property="og:url" content="http://jxjweb.top/">
+  <meta property="og:site_name" content="jxj-web">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="./model/index/style.css">
+  <script src="./main.js"></script>
+  <script src="./model/vue.min.js"></script>
+</head>
+
+<body>
+  <section class="page-header">
+    <h1 class="project-name">熠熠生阳</h1>
+    <h2 class="project-tagline">前端,加油!</h2>
+  </section>
+  <section class="main-content">
+    <h1>欢迎来到小健个人页面 <span> ☆ </span> <span style="font-size: 0.1em;">这里是小健的前端学习小记</span></h1>
+    <h2><a href="https://github.com/jxj322991"> github 个人主页</a></h2>
+    <h2><a href="http://jxjweb.top/siwei/01.html">前端思维导图</a></h2>
+
+    <h2 id="笔记-">笔记 👇</h2>
+    <div id="app">
+      <ol reversed>
+        <template v-if='list.length==0'>
+          <li>欢迎,欢迎,请刷新!</li>
+        </template>
+        <template v-else>
+          <li v-for='(x,index) in list'>
+            <a :key='index' :href="x.url">{{x.name}}</a>
+          </li>
+        </template>
+      </ol>
+    </div>
+    <p><img src="./model/index/fenhuan.jpg" alt="凤凰"></p>
+  </section>
+
+
+
+
+</body>
+<script>
+  var app = new Vue({
+    el: '#app',
+    data() {
+      return {
+        list: [],
+        index: 0
+      }
+    },
+    created() {
+    },
+    mounted() {
+      this.list = listArr
+    },
+  })
+</script>
+
+</html>
