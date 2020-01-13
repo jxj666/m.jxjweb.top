@@ -3,8 +3,8 @@
  * @Author: jinxiaojian
  * @Email: jinxiaojian@youxin.com
  * @Date: 2019-11-22 18:14:49
- * @LastEditTime: 2019-12-12 13:40:09
- * @LastEditors: 靳肖健
+ * @LastEditTime : 2020-01-13 14:40:57
+ * @LastEditors  : 靳肖健
  -->
 <!DOCTYPE html>
 <!-- saved from url=(0018)http://jxjweb.top/ -->
@@ -37,24 +37,54 @@
     <h2 class="project-tagline">前端,加油!</h2>
   </section>
   <section class="main-content">
-    <h1>欢迎来到小健个人页面 <span> ☆ </span> <span style="font-size: 0.1em;">这里是小健的前端学习小记</span></h1>
-    <h2><a href="https://github.com/jxj322991"> github 个人主页</a></h2>
-    <h2><a href="http://jxjweb.top/siwei/01.html">前端思维导图</a></h2>
-
-    <h2 id="笔记-">笔记 👇</h2>
     <div id="app">
-      <ol reversed>
-        <template v-if='list.length==0'>
-          <li>欢迎,欢迎,请刷新!</li>
-        </template>
-        <template v-else>
-          <li v-for='(x,index) in list'>
-            <a :key='index' :href="x.url">{{x.name}}</a>
-          </li>
-        </template>
-      </ol>
+      <div>
+        <h2>网站 👇</h2>
+        <div id="app">
+          <ol reversed>
+            <template v-if='list_page.length==0'>
+              <li>欢迎,欢迎,请刷新!</li>
+            </template>
+            <template v-else>
+              <li v-for='(x,index) in list_page'>
+                <a :key='index' :href="x.url">{{x.name}}</a>
+              </li>
+            </template>
+          </ol>
+        </div>
+      </div>
+      <div>
+        <h2>工具 👇</h2>
+        <div id="app">
+          <ol reversed>
+            <template v-if='list_tool.length==0'>
+              <li>欢迎,欢迎,请刷新!</li>
+            </template>
+            <template v-else>
+              <li v-for='(x,index) in list_tool'>
+                <a :key='index' :href="x.url">{{x.name}}</a>
+              </li>
+            </template>
+          </ol>
+        </div>
+      </div>
+      <div>
+        <h2>文档 👇</h2>
+        <div id="app">
+          <ol reversed>
+            <template v-if='list_doc.length==0'>
+              <li>欢迎,欢迎,请刷新!</li>
+            </template>
+            <template v-else>
+              <li v-for='(x,index) in list_doc'>
+                <a :key='index' :href="x.url">{{x.name}}</a>
+              </li>
+            </template>
+          </ol>
+        </div>
+      </div>
     </div>
-    <p><img src="./model/index/fenhuan.jpg" alt="凤凰"></p>
+    <p><img src="./model/index/fenhuan.jpg" style='width:30%;margin:10vw auto;display: block;' alt="凤凰"></p>
   </section>
 
 
@@ -66,14 +96,19 @@
     el: '#app',
     data() {
       return {
-        list: [],
+        list_tool: [],
+        list_doc: [],
+        list_page: [],
+
         index: 0
       }
     },
     created() {
     },
     mounted() {
-      this.list = listArr
+      this.list_tool = list_tool
+      this.list_doc = list_doc
+      this.list_page = list_page
     },
   })
 </script>
