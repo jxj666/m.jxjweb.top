@@ -154,8 +154,11 @@ article {
 .big_img,
 .big_img:hover {
   width: 100%;
-  min-width: 100%;
-  max-width: 100%;
+}
+.big {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
 }
 .pre {
   font-weight: 100;

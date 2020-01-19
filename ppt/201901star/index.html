@@ -1,0 +1,42 @@
+<!--
+ * @Description: 
+ * @Author: jinxiaojian
+ * @Email: jinxiaojian@youxin.com
+ * @Date: 2019-11-27 10:52:50
+ * @LastEditTime : 2020-01-19 11:27:55
+ * @LastEditors  : 靳肖健
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./../../model/theme.css">
+  <script src="./../../model/vue.min.js"></script>
+  <title>egg.js</title>
+</head>
+
+<body>
+  <h1>egg.js 在我们 LP系统 中的应用</h1>
+  <div id="app">
+    <div>
+      <h3 @click='toggleBig' style="text-align: center;cursor: pointer;">切换图片大小
+        ({{
+        bigShow? '变小':'变大'
+        }})
+      </h3>
+    </div>
+    <div v-for='(x,index) in list'>
+      <img :class={big:bigShow} :src="`幻灯片${index+1}.PNG`" :alt="index">
+    </div>
+  </div>
+</body>
+<script>
+  var imgNum = 15
+</script>
+<script src="./../lib/main.js"></script>
+
+
+</html>

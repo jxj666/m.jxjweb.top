@@ -3,7 +3,7 @@
  * @Author: jinxiaojian
  * @Email: jinxiaojian@youxin.com
  * @Date: 2020-01-13 11:08:26
- * @LastEditTime : 2020-01-13 19:42:24
+ * @LastEditTime : 2020-01-19 10:47:37
  * @LastEditors  : 靳肖健
  */
 var listArr = []
@@ -27,11 +27,11 @@ var list_page = [
 //文档
 var list_doc = [
   // { url: '', name: '' },
-  { url: '//m.jxjweb.top/doc/egg.pptx', name: '演讲 : egg.js在我们项目中的应用' },
-  { url: '//m.jxjweb.top/doc/vue3.pptx', name: '演讲 : vue3 核心设计思想' },
-  { url: '//m.jxjweb.top/doc/vue.pptx', name: '演讲 : vue 核心介绍' },
-  { url: '//m.jxjweb.top/doc/canvas.pptx', name: '演讲 : 前端绘图技术' },
-  { url: '//m.jxjweb.top/doc/201901star.pptx', name: '演讲 : 2019一季度团队之星' },
-
+  { url: '//m.jxjweb.top/ppt/cms', name: '演讲 : cms模板数据化' },
+  { url: '//m.jxjweb.top/ppt/egg', name: '演讲 : egg.js在我们项目中的应用' },
+  { url: '//m.jxjweb.top/ppt/vue3', name: '演讲 : vue3 核心设计思想' },
+  { url: '//m.jxjweb.top/ppt/vue', name: '演讲 : vue 核心介绍' },
+  { url: '//m.jxjweb.top/ppt/canvas', name: '演讲 : 前端绘图技术' },
+  { url: '//m.jxjweb.top/ppt/201901star', name: '演讲 : 2019一季度团队之星' },
 ]
 
