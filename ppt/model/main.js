@@ -3,7 +3,7 @@
  * @Author: jinxiaojian
  * @Email: jinxiaojian@youxin.com
  * @Date: 2020-01-19 11:19:20
- * @LastEditTime : 2020-01-19 11:20:26
+ * @LastEditTime : 2020-01-19 11:45:31
  * @LastEditors  : 靳肖健
  */
 var app = new Vue({
@@ -20,9 +20,10 @@ var app = new Vue({
   },
   methods: {
     addList () {
-
       for (var i = 0; i < this.index; i++) {
-        this.list.push({ key: +new Date() })
+        setTimeout(() => {
+          this.list.push({ key: +new Date() })
+        }, 100)
       }
     },
     toggleBig () {
